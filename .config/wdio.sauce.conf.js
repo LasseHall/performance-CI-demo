@@ -10,6 +10,7 @@ exports.config = Object.assign(config, {
   //
   user: process.env.SAUCE_USERNAME,
   key: process.env.SAUCE_ACCESS_KEY,
+  region: 'eu',
   //
   // Test runner services
   // Services take over a specific job you don't want to take care of. They enhance
