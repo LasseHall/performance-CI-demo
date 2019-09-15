@@ -10,7 +10,6 @@ exports.config = Object.assign(config, {
   //
   user: process.env.SAUCE_USERNAME,
   key: process.env.SAUCE_ACCESS_KEY,
-  region: 'eu',
   //
   // Test runner services
   // Services take over a specific job you don't want to take care of. They enhance
@@ -18,7 +17,7 @@ exports.config = Object.assign(config, {
   // commands. Instead, they hook themselves up into the test process.
   services: ['sauce', 'static-server'],
   sauceConnect: true,
-  sauceConnectOpts: { tunnelIdentifier: 'myTunnel' },
+  sauceConnectOpts: { tunnelIdentifier: 'myTunnel'},
   //
   // If you have trouble getting all important capabilities together, check out the
   // Sauce Labs platform configurator - a great tool to configure your capabilities:
